@@ -1,6 +1,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/purple.png" width="100%">
+  <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec" />
 </p>
 
 <h1 align="center">
