@@ -50,68 +50,94 @@
 
 ## 🏁 <font color="#9D50BB">Deployment Sequence (GUI-First Logic)</font>
 
-### 🛸 **PHASE 1: THE VISUAL BRIDGE (GUI START)**
-*Initiate the graphical environment first to handle advanced setup inside the desktop.*
+### 🛸 PHASE 1: THE VISUAL BRIDGE
 
-1. **Fire the X11 Engine:**
-   ```bash
-   termux-x11 :1 -ac &
+**Step 1: Fire the X11 Engine**
+```bash
+termux-x11 :1 -ac &
 
 ```
 
 > [!IMPORTANT]
-> Switch to **Termux-X11 App** immediately and keep it active in the background.
+> Switch to the **Termux-X11 App** immediately and keep it active in the background.
 
-2. **Establish Ubuntu Desktop:**
+**Step 2: Initialize Ubuntu Core**
+
 ```bash
 udroid login jammy:xfce4
-# Once logged in, launch the visual interface:
+
+```
+
+**Step 3: Launch Graphical Interface**
+
+```bash
 export DISPLAY=:1 && service dbus start && startxfce4 &
 
 ```
 
-
-
 ---
 
-### 🐧 **PHASE 2: DEVELOPMENT INJECTION (Inside XFCE)**
+### 🐧 PHASE 2: DEVELOPMENT INJECTION
 
-*Open a Terminal emulator inside the XFCE desktop environment and proceed.*
+*Open the Terminal emulator inside your XFCE desktop environment to proceed.*
 
-3. **Install Full Development Toolchain:**
+**Step 4: Update System Repositories**
+
 ```bash
-apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa \
-clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+apt update
 
 ```
 
+**Step 5: Install Build Toolchain**
 
-4. **Inject Flutter SDK Ecosystem:**
+```bash
+apt install -y curl git unzip xz-utils zip libglu1-mesa clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+
+```
+
+**Step 6: Clone Flutter SDK**
+
 ```bash
 cd ~ && git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
-echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc && source ~/.bashrc
 
 ```
 
+**Step 7: Configure Environment Path**
 
+```bash
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+
+```
+
+**Step 8: Refresh Bash Configuration**
+
+```bash
+source ~/.bashrc
+
+```
 
 ---
 
-### 🚀 **PHASE 3: MISSION EXECUTION**
+### 🚀 PHASE 3: MISSION EXECUTION
 
-*Generate your first project and run it as a native Linux application.*
+**Step 9: Scaffold New Project**
 
-5. **Generate & Launch:**
 ```bash
-flutter create kernel_flow_app && cd kernel_flow_app
+flutter create kernel_flow_app
+
+```
+
+**Step 10: Navigate to Project**
+
+```bash
+cd kernel_flow_app
+
+```
+
+**Step 11: Execute Linux Desktop Build**
+
+```bash
 flutter run -d linux
 
 ```
 
-
-
----
-
-## 📊 Developer Neural Network
-
----
