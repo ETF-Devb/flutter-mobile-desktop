@@ -14,17 +14,12 @@
 </p>
 
 <p align="center">
-  <b>The ultimate workstation setup for mobile-based Linux development.</b>
+  <div style="border: 3px solid #9D50BB; border-radius: 15px; padding: 5px; background: #0d1117; box-shadow: 0 0 20px #9D50BB;">
+    <img src="https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec" width="100%" style="border-radius: 10px;" alt="Flutter Demo GIF">
+  </div>
   <br />
-  <i>Optimized for performance, styled for professionals.</i>
+  <img src="https://img.shields.io/badge/▶_PREVIEW-ANIMATED_GIF-9D50BB?style=flat-square" />
 </p>
-
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec" width="100%" controls autoplay muted loop>
-  </video>
-  <br>
-  <img src="https://img.shields.io/badge/▶_PREVIEW-DEMO-9D50BB?style=flat-square" />
-</div>
 
 ---
 
