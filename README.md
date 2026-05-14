@@ -131,7 +131,3 @@ Run your application as a native Linux desktop entity:
 flutter run -d linux
 
 ```
-
----
-
-هاد الملف دابا تقدر تحطو في GitHub ديالك وأنت مرتاح، كيبان ديال "عشاق الكود" الحقيقيين! واش ناضي هكا؟
