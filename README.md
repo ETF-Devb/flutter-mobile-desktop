@@ -42,14 +42,11 @@
 
 ## 🛠️ <font color="#9D50BB">Core Modules</font>
 
-> [!NOTE]
-> Ensure all modules are up-to-date to prevent kernel mismatches.
-
-| Module | Source | Status |
+| Module | Deployment Source | Status |
 | :--- | :--- | :--- |
-| **Termux** | F-Droid | `REQUIRED` |
-| **Termux-X11** | Artifacts | `ACTIVE` |
-| **Udroid** | Ubuntu Jammy | `STABLE` |
+| **Termux** | [![Download](https://img.shields.io/badge/Download_APK-Black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/tag/v1.0.0) | `REQUIRED` |
+| **Termux-X11** | [![Download](https://img.shields.io/badge/Download_APK-Black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/tag/v1.0.0) | `REQUIRED` |
+| **Udroid** | [Ubuntu Jammy Environment] | `READY` |
 
 ---
 
