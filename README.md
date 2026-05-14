@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/purple.png" width="100%">
 </p>
 
 <h1 align="center">
@@ -26,9 +26,7 @@
 
 <p align="center">
   <div style="border: 3px solid #9D50BB; border-radius: 15px; padding: 10px; background: #0d1117; box-shadow: 0 0 20px #9D50BB;">
-    <a href="https://postimg.cc/bSfrpQwt">
-      <img src="https://i.postimg.cc/yxkZhjqv/demo.gif" width="100%" style="border-radius: 10px;" alt="Flutter Linux Android Demo">
-    </a>
+    <img src="https://github.com/user-attachments/assets/418d1858-54ee-4ccb-9feb-fcee40327081" width="100%" style="border-radius: 10px;" alt="Flutter Linux Android Environment">
   </div>
 </p>
 
