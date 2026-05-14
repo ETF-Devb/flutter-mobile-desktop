@@ -1,4 +1,4 @@
-
+```markdown
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=KERNEL%20FLOW%20PRO&fontSize=80&animation=fadeIn&desc=MOBILE%20WORKSTATION%20ARCHITECTURE&descSize=20&descAlignY=65" width="100%" />
 </p>
@@ -34,14 +34,14 @@
 
 ## ⚡ <font color="#9D50BB">The Architecture Stack</font>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,ubuntu,flutter,dart,bash,vscode,github,git,cpp,py&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=linux,ubuntu,android,flutter&theme=dark" />
 </p>
 
 ---
 
-## 🛠️ <font color="#9D50BB">Core Binary Deployment</font>
+## 📥 <font color="#9D50BB">Required Installation Files</font>
 
-| Component | Official Source | Status |
+| Essential App | Download Link | Status |
 | :--- | :--- | :--- |
 | **Termux Core** | [![Download](https://img.shields.io/badge/V1.0.0_APK-Black?style=for-the-badge&logo=github)](https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/tag/v1.0.0) | `SECURE` |
 | **Termux-X11** | [![Download](https://img.shields.io/badge/V1.0.0_APK-Black?style=for-the-badge&logo=github)](https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/tag/v1.0.0) | `STABLE` |
@@ -141,3 +141,8 @@ flutter run -d linux
 
 ```
 
+---
+
+## 📊 Developer Neural Network
+
+---
