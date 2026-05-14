@@ -1,4 +1,4 @@
-
+```markdown
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=KERNEL%20FLOW%20PRO&fontSize=80&animation=fadeIn&desc=MOBILE%20WORKSTATION%20ARCHITECTURE&descSize=20&descAlignY=65" width="100%" />
 </p>
@@ -12,9 +12,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ARCH-ARM64-9D50BB?style=for-the-badge&logo=arm" />
-  <img src="https://img.shields.io/badge/OS-UBUNTU_22.04-E94333?style=for-the-badge&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/ENGINE-FLUTTER_STABLE-02569B?style=for-the-badge&logo=flutter" />
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ubuntu-E94333?style=for-the-badge&logo=ubuntu&logoColor=white" />
 </p>
 
 <p align="center">
