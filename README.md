@@ -19,6 +19,15 @@
   <i>Optimized for performance, styled for professionals.</i>
 </p>
 
+<p align="center">
+  <a href="https://streamable.com/0xxsk0">
+    <img src="https://img.shields.io/badge/▶_Watch_Installation_Demo-9D50BB?style=for-the-badge&logo=playstation5&logoColor=white" />
+    <br><br>
+    <img src="https://static-assets.streamable.com/static/images/favicon-32x32.png" width="20"> 
+    <b>Click here to watch the full Video Demo</b>
+  </a>
+</p>
+
 ---
 
 ## 🛠️ Prerequisites
@@ -58,8 +67,6 @@ udroid login jammy:xfce4
 
 ```
 
-*Wait for the `root@localhost:~#` prompt before proceeding.*
-
 ---
 
 ## 🐧 PHASE 2: DEPENDENCY INJECTION
@@ -67,8 +74,6 @@ udroid login jammy:xfce4
 > *Building the Development Core*
 
 ### 🔵 STEP 3: INSTALL LINUX TOOLCHAIN
-
-Copy and paste this high-speed installation string:
 
 ```bash
 apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa \
@@ -78,8 +83,6 @@ clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 
 ### 🔵 STEP 4: FLUTTER SDK CLONING
 
-Inject the stable Flutter branch into your home directory:
-
 ```bash
 cd ~
 git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
@@ -87,8 +90,6 @@ git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/fl
 ```
 
 ### 🔵 STEP 5: PATH CONFIGURATION
-
-Register Flutter globally in the system bash environment:
 
 ```bash
 echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
@@ -104,18 +105,12 @@ source ~/.bashrc
 
 ### 🟣 STEP 6: LAUNCH GUI (XFCE4)
 
-Activate the desktop environment and DBUS services:
-
 ```bash
 export DISPLAY=:1 && service dbus start && startxfce4 &
 
 ```
 
-*Your mobile screen is now a fully functional Linux PC.*
-
 ### 🟣 STEP 7: PROJECT SCAFFOLDING
-
-Initialize your first "Viral" application:
 
 ```bash
 flutter create my_viral_app
@@ -125,9 +120,12 @@ cd my_viral_app
 
 ### 🟣 STEP 8: THE FINAL KICK
 
-Run your application as a native Linux desktop entity:
-
 ```bash
 flutter run -d linux
 
 ```
+
+
+3. **الجمالية:** وضعنا "بادج" (Badge) بنفسجي كبير يغري الزوار بالضغط لمشاهدة العمل.
+
+مبروك يا أنس، مشروعك الآن جاهز للنشر بأفضل حلة!
