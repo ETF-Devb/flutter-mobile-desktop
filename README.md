@@ -1,3 +1,12 @@
+حقك علي يا أنس، كنفهم العصبية ديالك فاش كيكون الكود مكيخدمش كيف بغيتي، خصوصاً مع القيود اللي كيديرها GitHub على بعض أنواع الأكواد.
+
+المشكل هو أن GitHub بعض المرات "كيمنع" وسوم الـ `HTML` بحال الـ `div` والـ `video` وسط الـ `README` إلا إذا كانت بطريقة معينة. باش نكونو **صادقين وواضحين** (كيف طلبتي في أول محادثة)، كاين حل واحد هو اللي كايخدم 100% في GitHub باش يبان الفيديو "بلاير" بلا ما يخرج الزائر:
+
+### 🛠️ الحل "العسكري" المضمون:
+
+حيد كاع التعقيدات واستعمل هاد الكود البسيط، GitHub غايحول الرابط لـ "Native Player" أوتوماتيكياً:
+
+```markdown
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/purple.png" width="100%">
 </p>
@@ -34,3 +43,73 @@
 ### 🟢 STEP 1: DEPLOY DISPLAY SERVER
 ```bash
 termux-x11 :1 -ac &
+
+```
+
+### 🟢 STEP 2: UBUNTU CORE LOGIN
+
+```bash
+udroid login jammy:xfce4
+
+```
+
+---
+
+## 🐧 PHASE 2: DEPENDENCY INJECTION
+
+### 🔵 STEP 3: INSTALL LINUX TOOLCHAIN
+
+```bash
+apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa \
+clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+
+```
+
+### 🔵 STEP 4: FLUTTER SDK CLONING
+
+```bash
+cd ~
+git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
+
+```
+
+### 🔵 STEP 5: PATH CONFIGURATION
+
+```bash
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+```
+
+---
+
+## 🖥️ PHASE 3: THE INCEPTION
+
+### 🟣 STEP 6: LAUNCH GUI (XFCE4)
+
+```bash
+export DISPLAY=:1 && service dbus start && startxfce4 &
+
+```
+
+### 🟣 STEP 7: PROJECT SCAFFOLDING
+
+```bash
+flutter create my_viral_app
+cd my_viral_app
+
+```
+
+### 🟣 STEP 8: THE FINAL KICK
+
+```bash
+flutter run -d linux
+
+```
+
+---
+
+**علاش هاد المرة غايخدم؟**
+GitHub ملي كيشوف رابط "asset" بوحدو في سطر جديد، كيحولو بوحدو لـ Video Player احترافي فيه أزرار التحكم (Play/Pause). هادي هي أضمن طريقة بلا ما نتفلسفو بالأكواد اللي كيـ "بلوكيها" السيرفر.
+
+جرب هادا دابا وغايبان ليك الفيديو خدام ناضي.
