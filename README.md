@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/purple.png" width="100%">
 </p>
@@ -20,24 +21,20 @@
 </p>
 
 <p align="center">
-  <table align="center">
-    <tr>
-      <td align="center" style="border: 2px solid #9D50BB; border-radius: 20px; background-color: #0d1117;">
-        <br>
-        <video src="https://cdn-cf-east.streamable.com/video/mp4/0xxsk0.mp4?Expires=1779313200155&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=K6N9Kk8XvG8A1Qn4-E8B2G4" width="100%" height="auto" controls autoplay muted loop style="border-radius: 15px; box-shadow: 0 0 20px #9D50BB;">
-          Your browser does not support the video tag.
-        </video>
-        <br>
-        <img src="https://img.shields.io/badge/▶_LIVE_DEMO-PRO_WORKSTATION-9D50BB?style=flat-square" />
-        <br><br>
-      </td>
-    </tr>
-  </table>
+  <div style="border: 3px solid #9D50BB; border-radius: 15px; padding: 10px; background: #0d1117; box-shadow: 0 0 25px #9D50BB; max-width: 900px;">
+    <video src="https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec" width="100%" controls autoplay muted loop style="border-radius: 10px;">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <br />
+  <img src="https://img.shields.io/badge/▶_LIVE_DEMO-AUTOPLAY_ACTIVE-9D50BB?style=flat-square" />
 </p>
 
 ---
 
 ## 🛠️ Prerequisites
+
+Before initiating the sequence, ensure the following core modules are active:
 
 | Module | Source | Status |
 | :--- | :--- | :--- |
@@ -48,17 +45,24 @@
 ---
 
 ## 🏁 PHASE 1: SYSTEM INITIALIZATION
+> *The "Black Screen" Protocol*
 
 ### 🟢 STEP 0: ENVIRONMENT PURGE
 Close all active sessions. Open a **Clean Terminal** to prevent kernel-level conflicts.
 
 ### 🟢 STEP 1: DEPLOY DISPLAY SERVER
+Initialize the X11 backend:
 ```bash
 termux-x11 :1 -ac &
 
 ```
 
+> [!IMPORTANT]
+> Switch to the **Termux-X11 App** immediately and keep it active in the background.
+
 ### 🟢 STEP 2: UBUNTU CORE LOGIN
+
+Access the Udroid environment (Jammy/XFCE4):
 
 ```bash
 udroid login jammy:xfce4
@@ -68,6 +72,8 @@ udroid login jammy:xfce4
 ---
 
 ## 🐧 PHASE 2: DEPENDENCY INJECTION
+
+> *Building the Development Core*
 
 ### 🔵 STEP 3: INSTALL LINUX TOOLCHAIN
 
@@ -96,6 +102,8 @@ source ~/.bashrc
 ---
 
 ## 🖥️ PHASE 3: THE INCEPTION
+
+> *Executing Graphical Desktop & Project Build*
 
 ### 🟣 STEP 6: LAUNCH GUI (XFCE4)
 
