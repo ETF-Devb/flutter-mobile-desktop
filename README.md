@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=KERNEL%20FLOW%20PRO&fontSize=80&animation=fadeIn&desc=MOBILE%20WORKSTATION%20ARCHITECTURE&descSize=20&descAlignY=65" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=ETF-Devb&fontSize=80&animation=fadeIn&desc=MOBILE%20WORKSTATION%20ARCHITECTURE&descSize=20&descAlignY=65" width="100%" />
 </p>
 
 <p align="center">
@@ -124,14 +124,14 @@ source ~/.bashrc
 **Step 9: Scaffold New Project**
 
 ```bash
-flutter create kernel_flow_app
+flutter create etf_devb_app
 
 ```
 
 **Step 10: Navigate to Project**
 
 ```bash
-cd kernel_flow_app
+cd etf_devb_app
 
 ```
 
@@ -147,3 +147,7 @@ flutter run -d linux
 ## 📊 Developer Neural Network
 
 ---
+
+```
+
+```
