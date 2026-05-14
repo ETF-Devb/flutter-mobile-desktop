@@ -14,8 +14,17 @@
 </p>
 
 <p align="center">
-  https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec
+  <b>The ultimate workstation setup for mobile-based Linux development.</b>
+  <br />
+  <i>Optimized for performance, styled for professionals.</i>
 </p>
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/e7ad0058-8768-4ad9-819e-8d5b21dddbec" width="100%" controls autoplay muted loop>
+  </video>
+  <br>
+  <img src="https://img.shields.io/badge/▶_PREVIEW-DEMO-9D50BB?style=flat-square" />
+</div>
 
 ---
 
@@ -34,68 +43,3 @@
 ### 🟢 STEP 1: DEPLOY DISPLAY SERVER
 ```bash
 termux-x11 :1 -ac &
-
-```
-
-### 🟢 STEP 2: UBUNTU CORE LOGIN
-
-```bash
-udroid login jammy:xfce4
-
-```
-
----
-
-## 🐧 PHASE 2: DEPENDENCY INJECTION
-
-### 🔵 STEP 3: INSTALL LINUX TOOLCHAIN
-
-```bash
-apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa \
-clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
-
-```
-
-### 🔵 STEP 4: FLUTTER SDK CLONING
-
-```bash
-cd ~
-git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
-
-```
-
-### 🔵 STEP 5: PATH CONFIGURATION
-
-```bash
-echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
-source ~/.bashrc
-
-```
-
----
-
-## 🖥️ PHASE 3: THE INCEPTION
-
-### 🟣 STEP 6: LAUNCH GUI (XFCE4)
-
-```bash
-export DISPLAY=:1 && service dbus start && startxfce4 &
-
-```
-
-### 🟣 STEP 7: PROJECT SCAFFOLDING
-
-```bash
-flutter create my_viral_app
-cd my_viral_app
-
-```
-
-### 🟣 STEP 8: THE FINAL KICK
-
-```bash
-flutter run -d linux
-
-```
-
----
