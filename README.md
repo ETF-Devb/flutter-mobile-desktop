@@ -1,110 +1,106 @@
+## 🛠 Prerequisites
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-SDK-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/Environment-Ubuntu_Jammy-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/IDE-VS_Code_OSS-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-</p>
+Ensure you have these installed:
 
-<p align="center">
-  <img src="https://images2.imgbox.com/71/9b/7pI6kYfC_o.png" width="850" alt="Flutter on Android Preview" />
-</p>
+* **Termux** (F-Droid version)
+* **Termux-X11** app
+* **Udroid** environment (Ubuntu Jammy)
 
 ---
 
-### [ >_ DEVELOPMENT_SUITE ]
-> **Project:** Mobile Flutter Dev-Station  
-> **Target:** Build & Run Cross-Platform Apps directly from Android (via Udroid).
+## 🏁 Phase 1: Termux Initial Setup (The "Black Screen" Phase)
 
-<a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases">
-  <img src="https://img.shields.io/github/v/release/ETF-Devb/Mobile-Workstation-Pro?style=for-the-badge&color=02569B&label=DOWNLOAD%20DEV%20ASSETS&logo=github" />
-</a>
+### 0️⃣ Step 0: Clean Start
+
+> [!IMPORTANT]
+> First, close all existing sessions and open a **fresh/clean** Termux terminal to avoid any background conflicts.
+
+### 1️⃣ Step 1: Start X11 Display Server
+
+Run the following command to initialize the display server:
+
+```bash
+termux-x11 :1 -ac &
+
+```
+
+> **Action Required:** Now, exit Termux (keep it running in the background) and **open the Termux-X11 app**. Leave it active in the background.
+
+### 2️⃣ Step 2: Enter Ubuntu Environment
+
+Login to your Udroid environment (No need to type "termux" at the start):
+
+```bash
+udroid login jammy:xfce4
+
+```
+
+*Wait until you see `root@localhost:~#`—this confirms you are inside.*
 
 ---
 
-### [ >_ FLUTTER_INSTALLATION_FLOW ]
+## 🐧 Phase 2: Ubuntu Preparation & Flutter Setup
 
-#### 1. System Preparation
-Before installing Flutter, we must ensure all native dependencies are present in our Ubuntu environment.
+### 3️⃣ Step 3: Install Required Linux Libraries
+
+Copy and paste this one-liner to install all Flutter dependencies for Linux:
+
 ```bash
-# Update repositories and install essential build tools
-sudo apt update && sudo apt upgrade -y
-sudo apt install git curl unzip xz-utils zip libglu1-mesa clang cmake ninja-build pkg-config libgtk-3-dev -y
+apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa \
+clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 
 ```
 
-#### 2. Fetching Flutter SDK
+### 4️⃣ Step 4: Download Flutter SDK
 
-We will use the stable branch to ensure maximum reliability on mobile-proot environments.
+Clone the stable branch into your home directory:
 
 ```bash
-# Clone Flutter directly to your home directory
-git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
+cd ~
+git clone https://github.com/flutter/flutter.git -b stable
 
 ```
 
-#### 3. Path Configuration
+### 5️⃣ Step 5: Define Flutter in PATH
 
-To execute `flutter` commands from anywhere, we need to export the binary path.
+Make the `flutter` command accessible globally:
 
 ```bash
-# Add Flutter to your environment path
-export PATH="$PATH:`pwd`/flutter/bin"
-
-# Verify installation (This will download Dart SDK automatically)
-flutter doctor
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
 
 ```
 
 ---
 
-### [ !_ WORKSPACE_INITIALIZATION ]
+## 🖥️ Phase 3: Launch & Execute (The "Inception")
 
-#### Step 1: Create Your First Project
+### 6️⃣ Step 6: Start Graphical Interface (XFCE)
 
-Initialize a clean Flutter boilerplate project.
+Run this command to bring up the desktop (Copy-paste as one line):
 
 ```bash
-flutter create my_first_app
-cd my_first_app
+export DISPLAY=:1 && service dbus start && startxfce4 &
 
 ```
 
-#### Step 2: Launching the Editor
+> **Note:** Now check your **Termux-X11 app**; the Ubuntu desktop should be visible.
 
-We recommend using **VS Code (OSS)** for a lightweight yet powerful experience.
+### 7️⃣ Step 7: Create Your First Project
+
+Open the **Terminal** inside XFCE and run:
 
 ```bash
-# Open your project in the editor
-code .
+flutter create my_viral_app
+cd my_viral_app
 
 ```
 
-#### Step 3: Execution Protocol (Linux Desktop Mode)
+### 8️⃣ Step 8: The "Final Kick" - Run the App
 
-Since we are running inside XFCE4, we will run the app as a **Linux Desktop App** for testing.
+Launch your app as a native Linux Desktop application:
 
 ```bash
-# Run the application in debug mode
 flutter run -d linux
 
 ```
-
----
-
-### [ X_ CLEANUP_PROTOCOL ]
-
-If you encounter "Lock" issues or want to clear the build cache:
-
-```bash
-# Clear build artifacts
-flutter clean
-
-# Kill any hanging dart processes
-pkill -9 dart
-
-```
-
----
-
----
