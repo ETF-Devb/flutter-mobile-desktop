@@ -134,6 +134,3 @@ cd etf_devb_app
 flutter run -d linux
 
 ```
-
-
-```
