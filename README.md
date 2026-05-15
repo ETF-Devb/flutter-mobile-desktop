@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=ETF-Devb&fontSize=80&animation=fadeIn&desc=LINUX+DEVELOPMENT+ON+ANDROID&descSize=20&descAlignY=65" width="100%" />
 </p>
@@ -8,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=32&pause=1000&color=9D50BB&center=true&vCenter=true&width=700&lines=🚀+FLUTTER+LINUX+ON+ANDROID+READY;🛠️+UDROID+JAMMY+CORE+LOADED;🖥+DESKTOP+INTERFACE+ACTIVE" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=32&pause=1000&color=9D50BB&center=true&vCenter=true&width=700&lines=🚀+FLUTTER+LINUX+ON+ANDROID+READY;🛠️+UDROID+JAMMY+CORE+LOADED;🖥️+DESKTOP+INTERFACE+ACTIVE" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -92,7 +91,7 @@ apt install -y curl git unzip xz-utils zip libglu1-mesa clang cmake ninja-build 
 **Step 6: Download Flutter**
 
 ```bash
-cd ~ && git clone [https://github.com/flutter/flutter.git](https://github.com/flutter/flutter.git) -b stable
+cd ~ && git clone https://github.com/flutter/flutter.git -b stable
 
 ```
 
@@ -132,9 +131,5 @@ cd etf_devb_app
 
 ```bash
 flutter run -d linux
-
-```
-
-```
 
 ```
