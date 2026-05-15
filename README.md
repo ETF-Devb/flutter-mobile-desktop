@@ -1,4 +1,4 @@
-```markdown
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=9D50BB&height=240&section=header&text=ETF-Devb&fontSize=80&animation=fadeIn&desc=LINUX+DEVELOPMENT+ON+ANDROID&descSize=20&descAlignY=65" width="100%" />
 </p>
